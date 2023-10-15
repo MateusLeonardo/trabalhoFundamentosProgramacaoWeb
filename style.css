@@ -1,0 +1,157 @@
+/* Definições gerais para todos os elementos na página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo para o contêiner principal da página */
+.container {
+  max-width: 900px;
+  margin: 0 auto; /* Centraliza o conteúdo na página */
+  padding: 6rem 1.2rem; /* Preenchimento (espaçamento) ao redor do conteúdo */
+}
+
+/* Estilo para o cabeçalho da página */
+header {
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos horizontalmente */
+  align-items: center; /* Alinha os elementos verticalmente */
+  flex-wrap: wrap;
+}
+
+/* Estilo para o logotipo no cabeçalho */
+.logo {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: blue;
+  font-weight: 700; /* Espessura da fonte (bold) */
+}
+
+/* Estilo para a barra de navegação */
+nav ul {
+  list-style: none; /* Remove os marcadores de lista */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .8rem; /* Espaço entre os elementos da lista */
+}
+
+/* Estilo para os links na barra de navegação */
+li a {
+  padding: .4rem .7rem;
+  border-radius: .4rem; /* Borda arredondada nos links */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  color: #000; /* Cor do texto */
+  font-size: 1.2rem;
+  transition: all .4s ease; /* Efeito de transição suave */
+}
+
+/* Estilo para os links na barra de navegação quando o mouse está sobre eles */
+li a:hover {
+  background: #d3d2d2; /* Cor de fundo quando o mouse está sobre o link */
+}
+
+/* Estilo para a seção 'Sobre' */
+#sobre {
+  margin-top: 5rem; /* Espaçamento superior para a seção 'Sobre' */
+}
+
+/* Estilo para os títulos das seções */
+.title {
+  position: relative;
+  font-size: 2rem;
+  padding-bottom: .6rem;
+  color: rgb(233, 12, 12); /* Cor do título */
+}
+
+/* Estilo para o elemento antes dos títulos */
+.title::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 5px;
+  height: 1.5rem;
+  background: #3005f0; /* Cor de fundo do elemento antes do título */
+  border-radius: 3px;
+  left: -10px; /* Posicionamento à esquerda em relação ao título */
+  top: 12px;
+}
+
+/* Estilo para os parágrafos na seção 'Sobre' */
+#sobre p {
+  padding-bottom: .5rem; /* Espaçamento inferior para os parágrafos */
+}
+.link-portfolio {
+  display: inline-block;
+  padding: .5rem 1rem;
+  background: #001aff;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: all .4s ease;
+}
+.link-portfolio:hover {
+  opacity: 80%;
+}
+
+/* Estilo para rótulos (labels) dos campos de formulário */
+label {
+  padding-top: .8rem;
+  display: block; /* Exibe rótulos em uma linha separada */
+  font-size: 1.2rem;
+  font-weight: 700; /* Espessura da fonte (bold) */
+}
+
+/* Estilo para o botão de envio do formulário */
+button {
+  display: block;
+  width: 250px;
+  padding: .8rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid black;
+  background: #fff;
+  border-radius: .5rem; /* Borda arredondada */
+  transition: all .4s ease; /* Efeito de transição suave */
+}
+
+/* Estilo para o botão de envio do formulário quando o mouse está sobre ele */
+button:hover {
+  background: #cfcfcf;
+}
+
+/* Estilo para os campos de entrada de texto */
+input {
+  width: 600px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+.hobbies {
+  padding-top: 1rem;
+}
+
+/* Estilo para a área de texto do formulário */
+textarea {
+  resize: none; /* Impede a redimensionamento da área de texto */
+  width: 600px;
+  padding: 10px;
+  border: 1px solid #b9b9b9;
+}
+
+/* Estilo para o contêiner do formulário de contato */
+.container-form {
+  display: flex;
+  justify-content: center; /* Centraliza o formulário horizontalmente */
+}
+
+@media (max-width: 768px) {
+  input, textarea {
+    width: 250px;
+  }
+}
